@@ -1,0 +1,324 @@
+$basablue: #56C4E6;
+$basared: #E22E1A;
+$basaorange: #F5A623;
+$basabeige: #FAF4E9;
+$charcoal: #4A4A4A;
+$navy: #004579;
+
+$baloo: 'Baloo', sans-serif;
+$rubik: 'Rubik', sans-serif;
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $rubik;
+  color: $charcoal;
+  font-weight: 300;
+  background-color: #F5E9D6;
+}
+
+nav {
+  background-color: $basablue;
+  padding: 10px 0px;
+  font-size: 16px;
+  color: white;
+  #navbar-brand {
+    font-family: $baloo;
+    font-size: 1.1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: $navy;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+
+  .nav-current {
+    color: $navy;
+  }
+}
+
+footer {
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+h1 {
+  font-family: $baloo;
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-family: $baloo;
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-family: $baloo;
+  font-size: 1.5rem;
+}
+
+.content {
+  padding: 20px;
+}
+
+.item-name {
+  font-weight: 500;
+  padding-right: 20px;
+}
+
+.fav-item {
+  text-align: center;
+
+  img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+.btn-orange {
+  background-color: $basaorange;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
+
+.title-red {
+  color: $basared;
+}
+
+.title-blue {
+  color: $basablue;
+}
+
+.link {
+  color: $basaorange;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    color: $navy;
+    text-decoration: none;
+  }
+}
+
+#myCarousel {
+  width: 100%;
+
+  .carousel-caption {
+    top: 0;
+    bottom: auto;
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .carousel-inner .item {
+    width: 100%;
+    height: 350px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .slide1 {
+    background: url("../../img/carousel/slide-1.jpg") no-repeat center center;
+  }
+
+  .slide2 {
+    background: url("../../img/carousel/slide-2.jpg") no-repeat center center;
+  }
+
+  .slide3 {
+    background: url("../../img/carousel/slide-3.jpg") no-repeat center center;
+  }
+}
+
+#customer-favorites {
+  background-color: $basabeige;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  .fav-item {
+    padding-top: 30px;
+    img {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+#contactinfo {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: -5px;
+}
+
+#news {
+  background-image: url("../../img/bg/news.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  color: white;
+  height: 300px;
+}
+
+#basashirt {
+  background-image: url("../../img/bg/basashirt.jpg");
+  background-size: cover;
+  background-position: right bottom;
+  height: 300px;
+}
+
+#aboutus {
+  background-color: $basabeige;
+  #about-img {
+    padding: 0px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+#menu-header {
+  background-image: url("../../img/bg/menu.jpg");
+  background-size: cover;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 1px 3px #555;
+
+  @media screen and (min-width: 720px) {
+    height: 300px;
+  }
+
+  p {
+    font-size: 1.2rem;
+     @media screen and (min-width: 720px) {
+       padding-left: 100px;
+       padding-right: 100px;
+     }
+  }
+}
+
+#menu-sections {
+  text-align: center;
+  color: $basaorange;
+  font-weight: 500;
+
+  div {
+    background-color: white;
+    height: 50px;
+    border: 1px $basabeige solid;
+    vertical-align: center;
+    padding-top: 15px;
+  }
+}
+
+.item-img {
+  padding: 5px;
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+
+.section-header {
+  height: 300px;
+  background-size: cover;
+
+    h1 {
+      color: white;
+      position: absolute;
+      bottom: 0;
+      text-shadow: 0px 1px 3px #555;
+      margin-left: 5px;
+    }
+}
+
+.menu-section {
+  background-color: $basabeige;
+  padding-bottom: 20px;
+  .row {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .pricing {
+    padding: 0px 20px;
+  }
+}
+
+table {
+  width: 100%;
+  td {
+    padding: 10px 0px;
+  }
+  td.item-name {
+    width: 80%;
+    padding-right: 20px;
+  }
+  td.item-price {
+    width: 20%;
+  }
+}
+
+#sandwiches {
+  .section-header {
+    background-image: url("../../img/bg/sandwiches.jpg");
+  }
+}
+
+#pokesushi {
+  .section-header {
+    background-image: url("../../img/bg/pokesushi.jpg");
+  }
+}
+
+#fishchipschowder {
+  .section-header {
+    background-image: url("../../img/bg/fishchipschowder.jpg");
+  }
+}
+
+#ricebowlsalad {
+  .section-header {
+    background-image: url("../../img/bg/ricebowlsalad.jpg");
+  }
+}
+
+#oysterstacosceviche {
+  .section-header {
+    background-image: url("../../img/bg/oysterstacosceviche.jpg");
+  }
+}
+
+#specialcombos {
+  .section-header {
+    background-image: url("../../img/bg/specialcombos.jpg");
+  }
+}
+
+#sidesdrinks {
+  .section-header {
+    background-image: url("../../img/bg/sidesdrinks.jpg");
+  }
+}
+
+#partytrays {
+  .section-header {
+    background-image: url("../../img/bg/partytrays.jpg");
+  }
+}

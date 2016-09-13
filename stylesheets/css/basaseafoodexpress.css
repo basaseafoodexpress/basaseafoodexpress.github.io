@@ -1,0 +1,227 @@
+html {
+  font-size: 16px; }
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #4A4A4A;
+  font-weight: 300;
+  background-color: #F5E9D6; }
+
+nav {
+  background-color: #56C4E6;
+  padding: 10px 0px;
+  font-size: 16px;
+  color: white; }
+  nav #navbar-brand {
+    font-family: "Baloo", sans-serif;
+    font-size: 1.1rem; }
+  nav a {
+    text-decoration: none;
+    color: white; }
+    nav a:hover {
+      color: #004579;
+      text-decoration: none;
+      font-weight: 500; }
+  nav .nav-current {
+    color: #004579; }
+
+footer {
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 0px; }
+
+h1 {
+  font-family: "Baloo", sans-serif;
+  font-size: 2.25rem; }
+
+h2 {
+  font-family: "Baloo", sans-serif;
+  font-size: 1.8rem; }
+
+h3 {
+  font-family: "Baloo", sans-serif;
+  font-size: 1.5rem; }
+
+.content {
+  padding: 20px; }
+
+.item-name {
+  font-weight: 500;
+  padding-right: 20px; }
+
+.fav-item {
+  text-align: center; }
+  .fav-item img {
+    width: 200px;
+    height: auto; }
+
+.btn-orange {
+  background-color: #F5A623;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  margin-top: 20px; }
+
+.title-red {
+  color: #E22E1A; }
+
+.title-blue {
+  color: #56C4E6; }
+
+.link {
+  color: #F5A623;
+  text-decoration: none;
+  font-weight: bold; }
+  .link:hover {
+    color: #004579;
+    text-decoration: none; }
+
+#myCarousel {
+  width: 100%; }
+  #myCarousel .carousel-caption {
+    top: 0;
+    bottom: auto; }
+    #myCarousel .carousel-caption p {
+      font-size: 1.2rem; }
+  #myCarousel .carousel-inner .item {
+    width: 100%;
+    height: 350px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  #myCarousel .slide1 {
+    background: url("../../img/carousel/slide-1.jpg") no-repeat center center; }
+  #myCarousel .slide2 {
+    background: url("../../img/carousel/slide-2.jpg") no-repeat center center; }
+  #myCarousel .slide3 {
+    background: url("../../img/carousel/slide-3.jpg") no-repeat center center; }
+
+#customer-favorites {
+  background-color: #FAF4E9;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px; }
+  #customer-favorites .fav-item {
+    padding-top: 30px; }
+    #customer-favorites .fav-item img {
+      padding-bottom: 10px; }
+
+#contactinfo {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: -5px; }
+
+#news {
+  background-image: url("../../img/bg/news.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  color: white;
+  height: 300px; }
+
+#basashirt {
+  background-image: url("../../img/bg/basashirt.jpg");
+  background-size: cover;
+  background-position: right bottom;
+  height: 300px; }
+
+#aboutus {
+  background-color: #FAF4E9; }
+  #aboutus #about-img {
+    padding: 0px; }
+    #aboutus #about-img img {
+      width: 100%;
+      height: auto; }
+
+#menu-header {
+  background-image: url("../../img/bg/menu.jpg");
+  background-size: cover;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 1px 3px #555; }
+  @media screen and (min-width: 720px) {
+    #menu-header {
+      height: 300px; } }
+  #menu-header p {
+    font-size: 1.2rem; }
+    @media screen and (min-width: 720px) {
+      #menu-header p {
+        padding-left: 100px;
+        padding-right: 100px; } }
+
+#menu-sections {
+  text-align: center;
+  color: #F5A623;
+  font-weight: 500; }
+  #menu-sections div {
+    background-color: white;
+    height: 50px;
+    border: 1px #FAF4E9 solid;
+    vertical-align: center;
+    padding-top: 15px; }
+
+.item-img {
+  padding: 5px; }
+  .item-img img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; }
+
+.section-header {
+  height: 300px;
+  background-size: cover; }
+  .section-header h1 {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    text-shadow: 0px 1px 3px #555;
+    margin-left: 5px; }
+
+.menu-section {
+  background-color: #FAF4E9;
+  padding-bottom: 20px; }
+  .menu-section .row {
+    width: 100%;
+    margin-left: 0px; }
+  .menu-section .pricing {
+    padding: 0px 20px; }
+
+table {
+  width: 100%; }
+  table td {
+    padding: 10px 0px; }
+  table td.item-name {
+    width: 80%;
+    padding-right: 20px; }
+  table td.item-price {
+    width: 20%; }
+
+#sandwiches .section-header {
+  background-image: url("../../img/bg/sandwiches.jpg"); }
+
+#pokesushi .section-header {
+  background-image: url("../../img/bg/pokesushi.jpg"); }
+
+#fishchipschowder .section-header {
+  background-image: url("../../img/bg/fishchipschowder.jpg"); }
+
+#ricebowlsalad .section-header {
+  background-image: url("../../img/bg/ricebowlsalad.jpg"); }
+
+#oysterstacosceviche .section-header {
+  background-image: url("../../img/bg/oysterstacosceviche.jpg"); }
+
+#specialcombos .section-header {
+  background-image: url("../../img/bg/specialcombos.jpg"); }
+
+#sidesdrinks .section-header {
+  background-image: url("../../img/bg/sidesdrinks.jpg"); }
+
+#partytrays .section-header {
+  background-image: url("../../img/bg/partytrays.jpg"); }
+
+/*# sourceMappingURL=basaseafoodexpress.css.map */
