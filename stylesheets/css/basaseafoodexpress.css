@@ -116,6 +116,12 @@ h3 {
   padding-bottom: 10px;
   padding-top: -5px; }
 
+a#maker {
+  text-decoration: underline;
+  color: #4A4A4A; }
+  a#maker:hover {
+    font-weight: 500; }
+
 #news {
   background-image: url("../../img/bg/news.jpg");
   background-size: cover;

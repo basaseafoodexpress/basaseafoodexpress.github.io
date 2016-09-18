@@ -167,6 +167,15 @@ h3 {
   padding-top: -5px;
 }
 
+a#maker {
+  text-decoration: underline;
+  color: $charcoal;
+
+  &:hover {
+    font-weight: 500;
+  }
+}
+
 #news {
   background-image: url("../../img/bg/news.jpg");
   background-size: cover;
