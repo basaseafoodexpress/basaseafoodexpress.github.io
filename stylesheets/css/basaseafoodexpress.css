@@ -1,11 +1,13 @@
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  height: 100%; }
 
 body {
   font-family: "Rubik", sans-serif;
   color: #4A4A4A;
   font-weight: 300;
-  background-color: #F5E9D6; }
+  background-color: #F5E9D6;
+  height: 100%; }
 
 nav {
   background-color: #56C4E6;
@@ -83,9 +85,16 @@ h3 {
   width: 100%; }
   #myCarousel .carousel-caption {
     top: 0;
-    bottom: auto; }
+    bottom: auto;
+    text-shadow: 0px 1px 3px #000;
+    height: 100%;
+    display: table; }
+    #myCarousel .carousel-caption .text-center {
+      display: table-cell;
+      vertical-align: middle; }
     #myCarousel .carousel-caption p {
-      font-size: 1.2rem; }
+      font-size: 1.3rem;
+      padding-bottom: 30px; }
   #myCarousel .carousel-inner .item {
     width: 100%;
     height: 350px;
@@ -94,11 +103,11 @@ h3 {
     -o-background-size: cover;
     background-size: cover; }
   #myCarousel .slide1 {
-    background: url("../../img/carousel/slide-1.jpg") no-repeat center center; }
+    background: url("../../img/carousel/slide-1-1.jpg") no-repeat center center; }
   #myCarousel .slide2 {
-    background: url("../../img/carousel/slide-2.jpg") no-repeat center center; }
+    background: url("../../img/carousel/slide-2-2.jpg") no-repeat center center; }
   #myCarousel .slide3 {
-    background: url("../../img/carousel/slide-3.jpg") no-repeat center center; }
+    background: url("../../img/carousel/slide-3-3.jpg") no-repeat center center; }
 
 #customer-favorites {
   background-color: #FAF4E9;
@@ -148,27 +157,66 @@ a#maker {
   background-size: cover;
   text-align: center;
   color: white;
-  text-shadow: 0px 1px 3px #555; }
+  text-shadow: 0px 1px 3px #555;
+  display: table; }
+  #menu-header .content {
+    display: table-cell;
+    vertical-align: middle; }
   @media screen and (min-width: 720px) {
     #menu-header {
       height: 300px; } }
   #menu-header p {
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    padding-bottom: 20px; }
     @media screen and (min-width: 720px) {
       #menu-header p {
         padding-left: 100px;
         padding-right: 100px; } }
 
-#menu-sections {
+#nav-menu {
+  margin: 0px -15px; }
+
+.navbar-toggle {
+  background-color: #E22E1A;
+  width: 100%;
+  margin: 0px;
+  border-radius: 0px;
+  font-size: 1.2rem;
+  color: white;
+  line-height: 0rem;
+  padding-top: 18px; }
+
+.fa-chevron-down {
+  transform: rotate(0deg);
+  transition: transform 0.25s linear; }
+
+.fa-chevron-down.open {
+  transform: rotate(180deg);
+  transition: transform 0.25s linear; }
+
+#menu-buttons {
   text-align: center;
   color: #F5A623;
   font-weight: 500; }
-  #menu-sections div {
-    background-color: white;
+  #menu-buttons div {
     height: 50px;
+    padding: 0px; }
+  #menu-buttons .btn-menu {
+    width: 100%;
+    height: 100%;
+    background-color: white;
     border: 1px #FAF4E9 solid;
-    vertical-align: center;
-    padding-top: 15px; }
+    -webkit-transition: font-size 0.25s;
+    -moz-transition: font-size 0.25s;
+    -o-transition: font-size 0.25s;
+    transition: font-size 0.25s; }
+    #menu-buttons .btn-menu:hover {
+      font-size: 1rem; }
+    #menu-buttons .btn-menu.active-section {
+      background-color: #F5A623;
+      color: white; }
+      #menu-buttons .btn-menu.active-section:hover {
+        font-size: 0.875rem; }
 
 .item-img {
   padding: 5px; }
