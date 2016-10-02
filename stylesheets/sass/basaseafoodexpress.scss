@@ -94,6 +94,17 @@ h3 {
   border: none;
   color: white;
   margin-top: 20px;
+  -webkit-transition: background-color 0.25s;
+  -moz-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+
+  &:hover {
+    background-color: $basared;
+  }
+
+  &:focus {
+    outline: 0 !important;
+  }
 }
 
 .title-red {
@@ -123,15 +134,20 @@ h3 {
     bottom: auto;
     text-shadow: 0px 1px 3px #000;
     height: 100%;
-    display: table;
-    .text-center {
-      display: table-cell;
-      vertical-align: middle;
-    }
     p {
       font-size: 1.3rem;
-      padding-bottom: 30px;
     }
+    @media screen and (max-width: 720px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    @media screen and (min-width: 480px) {
+      margin-top: 50px;
+}
   }
 
   .carousel-control.left, .carousel-control.right {
@@ -287,6 +303,10 @@ a#maker {
     transition: font-size 0.25s;
     &:hover {
       font-size: 1rem;
+    }
+
+    &:focus {
+      outline: 0 !important;
     }
 
     &.active-section {

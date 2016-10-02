@@ -64,7 +64,14 @@ h3 {
   border-radius: 30px;
   border: none;
   color: white;
-  margin-top: 20px; }
+  margin-top: 20px;
+  -webkit-transition: background-color 0.25s;
+  -moz-transition: background-color 0.25s;
+  transition: background-color 0.25s; }
+  .btn-orange:hover {
+    background-color: #E22E1A; }
+  .btn-orange:focus {
+    outline: 0 !important; }
 
 .title-red {
   color: #E22E1A; }
@@ -86,14 +93,17 @@ h3 {
     top: 0;
     bottom: auto;
     text-shadow: 0px 1px 3px #000;
-    height: 100%;
-    display: table; }
-    #myCarousel .carousel-caption .text-center {
-      display: table-cell;
-      vertical-align: middle; }
+    height: 100%; }
     #myCarousel .carousel-caption p {
-      font-size: 1.3rem;
-      padding-bottom: 30px; }
+      font-size: 1.3rem; }
+    @media screen and (max-width: 720px) {
+      #myCarousel .carousel-caption h1 {
+        font-size: 2rem; }
+      #myCarousel .carousel-caption p {
+        font-size: 1.2rem; } }
+    @media screen and (min-width: 480px) {
+      #myCarousel .carousel-caption {
+        margin-top: 50px; } }
   #myCarousel .carousel-control.left, #myCarousel .carousel-control.right {
     background-image: none;
     display: none; }
@@ -212,6 +222,8 @@ a#maker {
     transition: font-size 0.25s; }
     #menu-buttons .btn-menu:hover {
       font-size: 1rem; }
+    #menu-buttons .btn-menu:focus {
+      outline: 0 !important; }
     #menu-buttons .btn-menu.active-section {
       background-color: #F5A623;
       color: white; }
