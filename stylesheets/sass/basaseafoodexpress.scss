@@ -72,6 +72,31 @@ h3 {
   padding: 20px;
 }
 
+.title-red {
+  color: $basared;
+}
+
+.title-blue {
+  color: $basablue;
+}
+
+#contactinfo {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: -5px;
+}
+
+a#maker {
+  text-decoration: underline;
+  color: $charcoal;
+
+  &:hover {
+    font-weight: 500;
+  }
+}
+
+///////////////////////////////////////////////////// INDEX PAGE STYLING
 .fav-name {
   font-weight: 500;
 }
@@ -104,25 +129,6 @@ h3 {
 
   &:focus {
     outline: 0 !important;
-  }
-}
-
-.title-red {
-  color: $basared;
-}
-
-.title-blue {
-  color: $basablue;
-}
-
-.link {
-  color: $basaorange;
-  text-decoration: none;
-  font-weight: bold;
-
-  &:hover {
-    color: $navy;
-    text-decoration: none;
   }
 }
 
@@ -189,22 +195,6 @@ h3 {
   }
 }
 
-#contactinfo {
-  background-color: white;
-  text-align: center;
-  padding-bottom: 10px;
-  padding-top: -5px;
-}
-
-a#maker {
-  text-decoration: underline;
-  color: $charcoal;
-
-  &:hover {
-    font-weight: 500;
-  }
-}
-
 #news {
   background-image: url("../../img/bg/news.jpg");
   background-size: cover;
@@ -218,6 +208,18 @@ a#maker {
   background-size: cover;
   background-position: right bottom;
   height: 300px;
+}
+
+///////////////////////////////////////////////////// ABOUTUS PAGE STYLING
+.link {
+  color: $basaorange;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    color: $basared;
+    text-decoration: none;
+  }
 }
 
 #aboutus {
@@ -257,6 +259,7 @@ a#maker {
   }
 }
 
+///////////////////////////////////////////////////// MENU PAGE STYLING
 #menu-header {
   background-image: url("../../img/bg/menu.jpg");
   background-size: cover;
@@ -359,7 +362,6 @@ a#maker {
     }
   }
 }
-
 
 .item-img {
   padding: 5px;

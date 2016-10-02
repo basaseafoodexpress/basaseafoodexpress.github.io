@@ -47,6 +47,24 @@ h3 {
 .content {
   padding: 20px; }
 
+.title-red {
+  color: #E22E1A; }
+
+.title-blue {
+  color: #56C4E6; }
+
+#contactinfo {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: -5px; }
+
+a#maker {
+  text-decoration: underline;
+  color: #4A4A4A; }
+  a#maker:hover {
+    font-weight: 500; }
+
 .fav-name {
   font-weight: 500; }
 
@@ -72,20 +90,6 @@ h3 {
     background-color: #E22E1A; }
   .btn-orange:focus {
     outline: 0 !important; }
-
-.title-red {
-  color: #E22E1A; }
-
-.title-blue {
-  color: #56C4E6; }
-
-.link {
-  color: #F5A623;
-  text-decoration: none;
-  font-weight: bold; }
-  .link:hover {
-    color: #004579;
-    text-decoration: none; }
 
 #myCarousel {
   width: 100%; }
@@ -130,18 +134,6 @@ h3 {
     #customer-favorites .fav-item img {
       padding-bottom: 10px; }
 
-#contactinfo {
-  background-color: white;
-  text-align: center;
-  padding-bottom: 10px;
-  padding-top: -5px; }
-
-a#maker {
-  text-decoration: underline;
-  color: #4A4A4A; }
-  a#maker:hover {
-    font-weight: 500; }
-
 #news {
   background-image: url("../../img/bg/news.jpg");
   background-size: cover;
@@ -154,6 +146,14 @@ a#maker {
   background-size: cover;
   background-position: right bottom;
   height: 300px; }
+
+.link {
+  color: #F5A623;
+  text-decoration: none;
+  font-weight: bold; }
+  .link:hover {
+    color: #E22E1A;
+    text-decoration: none; }
 
 #aboutus {
   background-color: #FAF4E9; }
