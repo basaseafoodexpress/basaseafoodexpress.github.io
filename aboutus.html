@@ -38,7 +38,8 @@
       <div class="col-lg-10">
 
         <div class="row" id="aboutus">
-          <div class="col-sm-6">
+          <div class="col-md-6" id="about-text">
+            <div class="box">
             <div class="content">
               <h1 class="title-blue">About Basa Seafood Express</h1>
               <p>Scott Lai emigrated to the U.S. from Vietnam over 30 years ago, and has been working in the seafood business ever since. Basa Seafood Express started in 2009, when Scott decided that he wanted to make delicious, healthy seafood affordable for anyone in the Bay Area. Through a long partnership with his suppliers, Scott always manages to get some of the best seafood available. Focusing on fresh seafood and low prices, Scott built a shining reputation among locals.</p>
@@ -51,8 +52,11 @@
               <a href="http://missionlocal.org/2013/04/the-man-behind-basa-seafood-express/" class="link"><p>Mission Local – April 2013</p></a>
             </div>
           </div>
-          <div  id="about-img" class="col-sm-6">
+          </div>
+          <div  id="about-img" class="col-md-6">
+            <div class="box">
           <img src="img/bg/aboutus.png">
+        </div>
           </div>
         </div>
 
@@ -90,6 +94,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script language="JavaScript" type="text/javascript" src="scripts/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
   <script language="JavaScript" type="text/javascript" src="scripts/bootstrap.min.js"></script>
+  <script language="JavaScript" type="text/javascript">
+  $(document).ready(function(){
+    $(function() {
+    $('.box').matchHeight();
+});
+
+  });
+  </script>
 
 </body>

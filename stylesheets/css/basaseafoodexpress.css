@@ -157,11 +157,26 @@ a#maker {
 
 #aboutus {
   background-color: #FAF4E9; }
+  @media screen and (min-width: 800px) and (max-width: 991px) {
+    #aboutus #about-text {
+      margin-bottom: -250px; } }
   #aboutus #about-img {
     padding: 0px; }
-    #aboutus #about-img img {
-      width: 100%;
-      height: auto; }
+    #aboutus #about-img .box {
+      position: relative; }
+      #aboutus #about-img .box img {
+        float: right;
+        width: auto;
+        height: 100%; }
+        @media screen and (min-width: 992px) {
+          #aboutus #about-img .box img {
+            position: absolute;
+            bottom: 0;
+            right: 0; } }
+        @media screen and (max-width: 543px) {
+          #aboutus #about-img .box img {
+            width: 100%;
+            height: auto; } }
 
 #menu-header {
   background-image: url("../../img/bg/menu.jpg");
@@ -173,6 +188,9 @@ a#maker {
   #menu-header .content {
     display: table-cell;
     vertical-align: middle; }
+    @media screen and (max-width: 720px) {
+      #menu-header .content h1 {
+        font-size: 2rem; } }
   @media screen and (min-width: 720px) {
     #menu-header {
       height: 300px; } }
@@ -198,11 +216,19 @@ a#maker {
   padding-top: 18px; }
 
 .fa-chevron-down {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
   transform: rotate(0deg);
+  -webkit-transition: transform 0.25s linear;
+  -moz-transition: transform 0.25s linear;
   transition: transform 0.25s linear; }
 
 .fa-chevron-down.open {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
   transform: rotate(180deg);
+  -webkit-transition: transform 0.25s linear;
+  -moz-transition: transform 0.25s linear;
   transition: transform 0.25s linear; }
 
 #menu-buttons {

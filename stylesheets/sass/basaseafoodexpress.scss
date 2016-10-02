@@ -222,12 +222,36 @@ a#maker {
 
 #aboutus {
   background-color: $basabeige;
-  #about-img {
-    padding: 0px;
-    img {
-      width: 100%;
-      height: auto;
-    }
+
+  #about-text {
+  @media screen and (min-width: 800px) and (max-width: 991px) {
+    margin-bottom: -250px;
+  }
+}
+
+
+    #about-img {
+      padding: 0px;
+
+      .box {
+        position: relative;
+        img {
+            @media screen and (min-width: 992px) {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+
+          @media screen and (max-width: 543px) {
+            width: 100%;
+            height: auto;
+
+        }
+        float: right;
+          width: auto;
+          height: 100%;
+      }
+      }
   }
 }
 
@@ -242,6 +266,13 @@ a#maker {
   .content {
     display: table-cell;
     vertical-align: middle;
+
+    @media screen and (max-width: 720px) {
+      h1 {
+        font-size: 2rem;
+      }
+}
+
   }
 
   @media screen and (min-width: 720px) {
@@ -274,12 +305,20 @@ a#maker {
 }
 
 .fa-chevron-down{
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
   transform: rotate(0deg);
+  -webkit-transition: transform 0.25s linear;
+  -moz-transition: transform 0.25s linear;
   transition: transform 0.25s linear;
 }
 
 .fa-chevron-down.open{
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
   transform: rotate(180deg);
+  -webkit-transition: transform 0.25s linear;
+  -moz-transition: transform 0.25s linear;
   transition: transform 0.25s linear;
 }
 
