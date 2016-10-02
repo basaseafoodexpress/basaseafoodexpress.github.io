@@ -96,12 +96,12 @@ h3 {
     height: 100%; }
     #myCarousel .carousel-caption p {
       font-size: 1.3rem; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 767px) {
       #myCarousel .carousel-caption h1 {
         font-size: 2rem; }
       #myCarousel .carousel-caption p {
         font-size: 1.2rem; } }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 544px) {
       #myCarousel .carousel-caption {
         margin-top: 50px; } }
   #myCarousel .carousel-control.left, #myCarousel .carousel-control.right {
@@ -160,6 +160,9 @@ a#maker {
   @media screen and (min-width: 800px) and (max-width: 991px) {
     #aboutus #about-text {
       margin-bottom: -250px; } }
+  @media screen and (min-width: 680px) and (max-width: 799px) {
+    #aboutus #about-text {
+      margin-bottom: -150px; } }
   #aboutus #about-img {
     padding: 0px; }
     #aboutus #about-img .box {
@@ -188,16 +191,16 @@ a#maker {
   #menu-header .content {
     display: table-cell;
     vertical-align: middle; }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 767px) {
       #menu-header .content h1 {
         font-size: 2rem; } }
-  @media screen and (min-width: 720px) {
+  @media screen and (min-width: 767px) {
     #menu-header {
       height: 300px; } }
   #menu-header p {
     font-size: 1.2rem;
     padding-bottom: 20px; }
-    @media screen and (min-width: 720px) {
+    @media screen and (min-width: 767px) {
       #menu-header p {
         padding-left: 100px;
         padding-right: 100px; } }
