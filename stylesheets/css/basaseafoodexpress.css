@@ -289,10 +289,8 @@ table {
   width: 100%; }
   table td {
     padding: 10px 0px; }
-  table tr:hover {
-    color: #E22E1A; }
-    table tr:hover td.item-price {
-      font-weight: 500; }
+  table tr:hover td.item-price {
+    font-weight: 500; }
   table td.item-name {
     width: 80%;
     padding-right: 20px;
